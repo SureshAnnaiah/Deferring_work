@@ -23,6 +23,6 @@ clean:
 .PHONY: modules modules_install clean
 
     # called from kernel build system: just declare what our modules are
- obj-m := tasklet.o workqueue.o
+ obj-m := tasklet.o  handler.o interrupt.o workqueue.o
 
 
