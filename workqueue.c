@@ -52,7 +52,7 @@ static int init_workqueue( void )
 	int result;
 	dev_t dev_num;
 
-        result = alloc_chrdev_region(&dev_num, 0, 1, "Workqueue"); 
+        result = alloc_chrdev_region(&dev_num, 0, 1, "Workqueue");
 	if(result < 0)
 		return result;
 	else

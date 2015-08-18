@@ -54,7 +54,7 @@ static int init_tasklet( void )
 	int result;
 	dev_t dev_num;
 
-        result = alloc_chrdev_region(&dev_num, 0, 1, "Tasklet"); 
+        result = alloc_chrdev_region(&dev_num, 0, 1, "Tasklet");
 	if(result < 0)
 		return result;
 	else
