@@ -25,7 +25,7 @@ static int __init init_proc(void)
 static void __exit exit_proc(void)
 {
         hrtimer_cancel(& htimer);
-        printk(KERN_INFO "my trigger module is distroyed \n");
+        printk(KERN_INFO "handler module destroyed \n");
 }
 module_init(init_proc);
 module_exit(exit_proc);
